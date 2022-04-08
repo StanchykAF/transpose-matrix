@@ -3,10 +3,13 @@ import java.util.Arrays;
 
 public class TransposeMatrix {
     public static int[][] transpose(int[][] matrix) {
-
-        //Put your code here
-
-        return null;
+        int[][] transposedMatrix = new int [matrix[0].length][matrix.length];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                transposedMatrix[j][i] = matrix[i][j];
+            }
+        }
+        return transposedMatrix;
     }
 
     public static void main(String[] args) {
